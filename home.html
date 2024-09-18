@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Home Page</title>
+
+    <!-- link -->
+     
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="flex justify-center">
+       <div class="mockup-phone">
+  <div class="camera"></div>
+  <div class="display">
+    <div class="artboard artboard-demo phone-3">
+        <!-- available ballance -->
+         <div>
+            <div class="stats shadow"></div>
+  <div class="stat">
+    <div id="account-ballance" class="stat-value">400</div>
+    <div class="stat-desc">Available Ballance</div>
+  </div>
+</div>
+<div class="divider"></div>
+<!-- user action button -->
+ <div><button id="Add-money" class="btn btn-lg bg-blue-700 hover:bg-blue-600 text-white">Add Money</button>
+ <button id="cash-out" class="btn btn-lg">Cash Out</button>
+</div>
+<div class="divider"></div>
+<!-- add money form -->
+  
+   
+    <div id="add-money-card" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+      <form class="card-body">
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text font-bold">Amount</span>
+          </label>
+          <input id="ammount" type="text" placeholder="Enter Amount" class="input input-bordered rounded-full bg-gray-100" required />
+        </div>
+        <div id="parent-div1" class="form-control">
+          <label class="label">
+            <span class="label-text font-bold">4 Digit Pin</span>
+          </label>
+          <input id="pin" type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered rounded-full bg-gray-100 " autocomplete="off" required />
+          
+        </div>
+        <div class="form-control mt-6">
+          <button id="add-btn" class="btn btn-primary font-bold text-white rounded-full bg-[#0874F2]">Add Money</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- cash out start -->
+     <div id="cash-out-card" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
+      <form class="card-body">
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text font-bold">Amount</span>
+          </label>
+          <input id="Cash-ammount" type="text" placeholder="Enter Amount" class="input input-bordered rounded-full bg-gray-100" required />
+        </div>
+        <div id="parent-div2" class="form-control">
+          <label class="label">
+            <span class="label-text font-bold">4 Digit Pin</span>
+          </label>
+          <input id="Cash-out-pin" type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered rounded-full bg-gray-100 " autocomplete="off" required />
+          
+        </div>
+        <div class="form-control mt-6">
+          <button id="out-btn" class="btn btn-primary font-bold text-white rounded-full bg-[#0874F2]">Cash Out</button>
+        </div>
+      </form>
+    </div>
+     <!-- cash out end -->
+  </div>
+         </div>
+    </div>
+  </div>
+</div>
+    </main>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
